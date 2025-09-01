@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>国外留学申请｜一站式全包 | 前途助攻</title>
+  <meta name="description" content="全员世界前30背景，3v1定制化方案，无Offer全额退款，科学定校，全流程代办。¥15,000（5个专业，不限学校）。" />
+  <meta name="color-scheme" content="light only" />
+  <style>
+    :root{
+      --bg:#0f1222;
+      --text:#0f1222;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --line:#eef2f7;
+      --brand:#5b8cff;
+      --brand-2:#7c5bff;
+      --accent:#00d3a7;
+      --danger:#ff5b79;
+      --grad: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 50%, #9c5bff 100%);
+      --soft: linear-gradient(135deg, #f3f6ff 0%, #f7f5ff 100%);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC", "Source Han Sans SC", "Helvetica Neue", Arial, sans-serif; color:var(--text); background:#fafbff}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;border:1px solid rgba(0,0,0,0.06);font-weight:600;transition:.2s;cursor:pointer}
+    .btn-primary{background:var(--grad); color:#fff; border:none; box-shadow:0 8px 24px rgba(95,100,255,0.24)}
+    .btn-primary:hover{transform:translateY(-2px); box-shadow:0 12px 28px rgba(95,100,255,0.28)}
+    .btn-ghost{background:#fff}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#f1f5ff;color:#3b5bff;font-weight:700;font-size:12px;letter-spacing:.3px}
+    .nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.72);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #f0f3fa}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo .mark{width:28px;height:28px;border-radius:8px;background:var(--grad); position:relative; overflow:hidden}
+    .logo small{color:var(--muted); font-weight:600}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    .mobile-toggle{display:none}
+    /* Hero */
+    .hero{position:relative; overflow:hidden; background:
+      radial-gradient(1200px 600px at 80% -120px, #e8ebff 0%, rgba(232,235,255,0) 60%),
+      radial-gradient(1000px 500px at -200px 20%, #f7f4ff 0%, rgba(247,244,255,0) 60%);}
+    .hero-inner{display:grid;grid-template-columns:1.1fr .9fr; gap:28px; align-items:center; padding:60px 0}
+    .hero h1{font-size:44px; line-height:1.12; margin:10px 0 14px 0}
+    .hero p{color:#4b5563; font-size:17px}
+    .trust{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
+    .trust .t{display:flex; gap:8px; align-items:center; padding:8px 12px; background:#fff; border:1px solid #eef2f7; border-radius:12px; font-weight:600; color:#334155}
+    .hero-visual{position:relative}
+    .hero-visual .card{background:#fff; border:1px solid #eef2f7; border-radius:16px; padding:16px; box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+    .hero-visual img{width:100%; border-radius:14px; aspect-ratio: 4/3; object-fit:cover}
+    /* Section */
+    section{padding:56px 0}
+    section h2{font-size:28px; margin:0 0 8px 0}
+    section .sub{color:var(--muted); margin-bottom:22px}
+    /* Grid cards */
+    .grid{display:grid; gap:16px}
+    .g-3{grid-template-columns:repeat(3,1fr)}
+    .g-4{grid-template-columns:repeat(4,1fr)}
+    .card{background:#fff; border:1px solid #eef2f7; border-radius:16px; padding:18px}
+    .card h3{margin:6px 0 8px 0; font-size:18px}
+    .card p{color:#4b5563}
+    .icon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:800}
+    .i1{background:linear-gradient(135deg, #7c5bff, #5b8cff)}
+    .i2{background:linear-gradient(135deg, #00d3a7, #46e6c3)}
+    .i3{background:linear-gradient(135deg, #ff8e5b, #ff5b79)}
+    .i4{background:linear-gradient(135deg, #50b6ff, #5b8cff)}
+    /* Pricing */
+    .pricing{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+    .price{font-size:40px;font-weight:900; letter-spacing:-.5px}
+    .note{font-size:12px;color:#6b7280}
+    .list{display:grid;gap:10px;margin:12px 0}
+    .list .li{display:flex;gap:10px;align-items:flex-start}
+    .li .dot{width:20px;height:20px;border-radius:999px;background:#eafaf5;color:#00b894;display:grid;place-items:center;font-weight:800;font-size:12px; flex-shrink:0}
+    /* Steps */
+    .steps{display:grid;grid-template-columns:repeat(8,1fr);gap:10px}
+    .step{background:#fff;border:1px solid #eef2f7;border-radius:14px;padding:12px;text-align:center}
+    .step b{display:block;margin-top:4px}
+    /* Team */
+    .team{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .avatar{width:100%; aspect-ratio: 4/3; object-fit:cover; border-radius:12px; margin-bottom:10px}
+    .tag{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#f7faff;color:#3b5bff;border:1px solid #e6ecff;font-weight:700;font-size:12px}
+    /* Testimonials */
+    .testi{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .q{font-style:italic;color:#374151}
+    /* Referral */
+    .ref{display:grid;grid-template-columns:1fr .8fr;gap:16px}
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr .9fr;gap:16px}
+    .input{width:100%;padding:12px 14px;border:1px solid #e5e7eb;border-radius:12px;font-size:15px}
+    .input:focus{outline:2px solid #dfe7ff;border-color:#cdd8ff}
+    textarea.input{min-height:120px;resize:vertical}
+    .agree{display:flex;gap:8px;align-items:flex-start;color:#475569;font-size:13px}
+    /* Footer */
+    footer{padding:28px 0;border-top:1px solid #eef2f7;color:#6b7280}
+    footer a{text-decoration:underline; text-decoration-color:#e5e7eb}
+    /* Responsive */
+    @media (max-width: 980px){
+      .nav-links{display:none}
+      .mobile-toggle{display:inline-flex}
+      .hero-inner{grid-template-columns:1fr}
+      .pricing{grid-template-columns:1fr}
+      .g-3, .g-4, .team, .testi, .steps, .ref, .contact{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="mark"></span>
+        <span>前途助攻<br><small>一站式留学申请</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#advantages">优势</a>
+        <a href="#pricing">价格</a>
+        <a href="#process">流程</a>
+        <a href="#team">师资</a>
+        <a href="#faq">答疑</a>
+        <a href="#contact" class="btn btn-primary">立即咨询</a>
+      </div>
+      <button class="mobile-toggle btn btn-ghost" id="mnav">菜单</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="badge">国外留学申请｜美国方向优先</span>
+        <h1>把复杂交给我们，你只负责<span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">拿 Offer</span>和收拾行李</h1>
+        <p>全员世界前30毕业背景；帮助学员拿到的录取均来自世界TOP100院校。3v1定制化方案＋全流程代办＋科学定校，<b>无 Offer 全额退款</b>。</p>
+        <div style="display:flex;gap:12px;margin-top:14px">
+          <a href="#contact" class="btn btn-primary">立即咨询</a>
+          <a href="#advantages" class="btn btn-ghost">了解服务</a>
+        </div>
+        <div class="trust">
+          <div class="t">🎓 全员世界前30</div>
+          <div class="t">🏆 TOP100录取覆盖</div>
+          <div class="t">💸 无Offer全额退</div>
+          <div class="t">📚 7年文书经验</div>
+        </div>
+        <p class="note">注：无Offer退款适用条款以服务合同为准。</p>
+      </div>
+      <div class="hero-visual">
+        <div class="card">
+          <img alt="校园与学生学习的氛围图" src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop" />
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+            <div>
+              <div style="font-weight:800">科学定校看得见</div>
+              <div class="note">数据驱动＋导师把关，拒绝玄学拍脑袋</div>
+            </div>
+            <span class="tag">✅ 命中更高</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Advantages -->
+  <section id="advantages" class="container">
+    <h2>我们的优势</h2>
+    <p class="sub">专业但不板正，稳中带点幽默感——申请季也要保持好心情。</p>
+    <div class="grid g-4">
+      <div class="card">
+        <div class="icon i1">A</div>
+        <h3>全员世界前30背景</h3>
+        <p>导师都有名校经历，视角开阔、标准更高，帮你少走弯路，直奔要点。</p>
+      </div>
+      <div class="card">
+        <div class="icon i2">3</div>
+        <h3>3v1定制化方案</h3>
+        <p>主导师＋文书老师＋申请顾问，像创业团队给你做“个人品牌搭建”。</p>
+      </div>
+      <div class="card">
+        <div class="icon i3">✍️</div>
+        <h3>7年资深文书</h3>
+        <p>不堆词藻，讲故事。把经历打磨成有“记忆点”的学术动机与成果叙述。</p>
+      </div>
+      <div class="card">
+        <div class="icon i4">🧭</div>
+        <h3>科学合理定校</h3>
+        <p>量化匹配模型＋风险分层，梦想校/主申校/保底校比例更聪明。</p>
+      </div>
+      <div class="card">
+        <div class="icon i2">🤝</div>
+        <h3>全流程代服务</h3>
+        <p>从规划、文书、网申到面试、签证、行前清单，一站式托管。</p>
+      </div>
+      <div class="card">
+        <div class="icon i1">🧪</div>
+        <h3>专业不限</h3>
+        <p>¥15,000 打包 5个专业申请方向，学校数量不设上限。</p>
+      </div>
+      <div class="card">
+        <div class="icon i3">🔁</div>
+        <h3>无 Offer 全额退</h3>
+        <p>结果导向的承诺，更有动力把你的材料打磨到状态在线。</p>
+      </div>
+      <div class="card">
+        <div class="icon i4">📈</div>
+        <h3>持续跟进</h3>
+        <p>申请状态追踪、加急提醒与补料清单，不错过每一个窗口期。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="container">
+    <h2>价格与包含</h2>
+    <p class="sub">透明定价，不玩文字游戏。</p>
+    <div class="pricing">
+      <div class="card">
+        <div class="tag">标准全包 · 推荐</div>
+        <div class="price" style="margin-top:8px">¥15,000</div>
+        <div class="note">包含 5 个专业方向申请｜不限学校数量</div>
+        <div class="list">
+          <div class="li"><div class="dot">✓</div><div><b>方案：</b>背景评估＋方向梳理＋时间线制定</div></div>
+          <div class="li"><div class="dot">✓</div><div><b>定校：</b>目标库搭建、分层与录取率推演</div></div>
+          <div class="li"><div class="dot">✓</div><div><b>文书：</b>PS/RS/CV/Essay 全套打磨（多轮迭代）</div></div>
+          <div class="li"><div class="dot">✓</div><div><b>网申：</b>账号创建、表单填写与材料提交流程托管</div></div>
+          <div class="li"><div class="dot">✓</div><div><b>加分：</b>套磁思路、面试准备、推荐信策略</div></div>
+          <div class="li"><div class="dot">✓</div><div><b>签证：</b>材料清单、DS-160指导、面签辅导</div></div>
+          <div class="li"><div class="dot">✓</div><div><b>行前：</b>选课攻略、住宿清单、到校报到指南</div></div>
+        </div>
+        <p class="note">注：不含各院校申请费、考试报名费与官方邮寄成本。</p>
+        <div style="display:flex;gap:10px;margin-top:8px">
+          <a href="#contact" class="btn btn-primary">预约免费评估</a>
+          <a href="#faq" class="btn btn-ghost">查看常见问题</a>
+        </div>
+      </div>
+      <div class="card" style="background:var(--soft)">
+        <h3>推荐有礼</h3>
+        <p style="margin-top:6px">每推荐 1 位同学成功签约，即返推荐金 <b>¥500</b>。</p>
+        <img alt="学生社群与推荐氛围图" class="avatar" src="https://images.unsplash.com/photo-1523580846011-8b8a127d7b3b?q=80&w=1200&auto=format&fit=crop" />
+        <p class="note">返现以签约与支付完成为准；返现方式以当期活动细则为准。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="container">
+    <h2>全流程路径</h2>
+    <p class="sub">从“我想出国”到“拿到Offer”，每一步有人在。</p>
+    <div class="steps">
+      <div class="step"><span>①</span><b>咨询</b><div class="note">了解背景</div></div>
+      <div class="step"><span>②</span><b>评估</b><div class="note">目标定位</div></div>
+      <div class="step"><span>③</span><b>定校</b><div class="note">分层建库</div></div>
+      <div class="step"><span>④</span><b>文书</b><div class="note">多轮打磨</div></div>
+      <div class="step"><span>⑤</span><b>网申</b><div class="note">材料提交</div></div>
+      <div class="step"><span>⑥</span><b>跟进</b><div class="note">状态追踪</div></div>
+      <div class="step"><span>⑦</span><b>签证</b><div class="note">面签辅导</div></div>
+      <div class="step"><span>⑧</span><b>行前</b><div class="note">落地指南</div></div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="container">
+    <h2>师资与导师</h2>
+    <p class="sub">全员世界前30大学毕业背景，懂招生官视角，也懂中国学生的痛点。</p>
+    <div class="team">
+      <div class="card">
+        <img class="avatar" alt="导师照片" src="https://images.unsplash.com/photo-1553250778-0f216c0c40f3?q=80&w=1200&auto=format&fit=crop" />
+        <h3>J. Chen｜首席导师</h3>
+        <p>工科 PhD 背景，擅长科研经历“故事化”表达与量化成果呈现。</p>
+        <span class="tag">🎓 世界前30</span>
+      </div>
+      <div class="card">
+        <img class="avatar" alt="文书老师照片" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop" />
+        <h3>M. Li｜文书负责人</h3>
+        <p>7年文书经验，关注差异化“学术动机”。少废话，多观点。</p>
+        <span class="tag">✍️ 文书总监</span>
+      </div>
+      <div class="card">
+        <img class="avatar" alt="申请顾问照片" src="https://images.unsplash.com/photo-1558222217-42c7e0b4f0b4?q=80&w=1200&auto=format&fit=crop" />
+        <h3>S. Wang｜申请顾问</h3>
+        <p>数十份网申填报与材料优化经验，擅长流程控与Deadline管理。</p>
+        <span class="tag">🗂️ 申请顾问</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="container">
+    <h2>学员感言</h2>
+    <p class="sub">真实反馈比硬广更有说服力。</p>
+    <div class="testi">
+      <div class="card">
+        <p class="q">“定校表太清爽了，直接看懂每所学校的‘冲稳保’。”</p>
+        <p class="note">CS 方向｜GPA 3.6</p>
+      </div>
+      <div class="card">
+        <p class="q">“文书像在讲我自己的科研旅程，面试官也专门问到了亮点。”</p>
+        <p class="note">Bio 方向｜科研2段</p>
+      </div>
+      <div class="card">
+        <p class="q">“流程有人盯，焦虑少了一半。结果也更稳。”</p>
+        <p class="note">MFE 方向｜实习2段</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referral -->
+  <section class="container" id="referral">
+    <h2>推荐返现</h2>
+    <p class="sub">每推荐一人成功签约，可获推荐金 ¥500。</p>
+    <div class="ref">
+      <div class="card">
+        <h3>怎么玩</h3>
+        <div class="list">
+          <div class="li"><div class="dot">①</div><div><b>分享：</b>把本页链接转给同学或社群</div></div>
+          <div class="li"><div class="dot">②</div><div><b>登记：</b>在下方留言备注“推荐人手机号”</div></div>
+          <div class="li"><div class="dot">③</div><div><b>返现：</b>对方签约后，7个工作日内完成返现</div></div>
+        </div>
+        <p class="note">活动以当期规则为准，如有变动以公告为准。</p>
+      </div>
+      <div class="card" style="background:#fff">
+        <img class="avatar" alt="同学互相推荐的社群氛围图" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="container">
+    <h2>常见问题</h2>
+    <div class="grid g-3">
+      <div class="card">
+        <h3>无 Offer 退款怎么判定？</h3>
+        <p>以双方签署的目标院校清单与时间线为准。如最终未获任何录取，按合同全额退款。</p>
+      </div>
+      <div class="card">
+        <h3>文书是代写吗？</h3>
+        <p>我们不“代写”，而是深度共创。通过访谈挖掘素材，确保表达真实、逻辑清晰、风格统一。</p>
+      </div>
+      <div class="card">
+        <h3>是否只做美国？</h3>
+        <p>美国为主，也可按需拓展英/港/新/加等地区。价格或服务项据需求微调。</p>
+      </div>
+      <div class="card">
+        <h3>申请节奏怎么排？</h3>
+        <p>建议提前 6–12 个月启动。若临近DDL，将优先保障文书与材料准确性。</p>
+      </div>
+      <div class="card">
+        <h3>如何选择专业方向？</h3>
+        <p>结合课程设置、科研/实习素材与职业目标，给出 5 个方向的差异化方案与优先级。</p>
+      </div>
+      <div class="card">
+        <h3>可以分期吗？</h3>
+        <p>支持分期或里程碑节点付款，细则以合同为准。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>联系我们</h2>
+    <p class="sub">电话/微信同号：<b>185 6924 4960</b>（添加请备注“留学咨询”）</p>
+    <div class="contact">
+      <div class="card">
+        <h3>免费评估表</h3>
+        <form onsubmit="event.preventDefault(); alert('已提交，我们会尽快联系你。');">
+          <div style="display:grid;gap:10px">
+            <input class="input" name="name" placeholder="姓名" required />
+            <input class="input" name="phone" placeholder="手机号/微信" required />
+            <input class="input" name="major" placeholder="目标专业（可留空待评估）" />
+            <select class="input" name="country">
+              <option value="US">目标国家：美国</option>
+              <option value="UK">目标国家：英国</option>
+              <option value="HK">目标地区：香港</option>
+              <option value="SG">目标国家：新加坡</option>
+              <option value="CA">目标国家：加拿大</option>
+            </select>
+            <textarea class="input" name="msg" placeholder="简述背景（GPA/标化/科研/实习等）"></textarea>
+            <label class="agree">
+              <input type="checkbox" required />
+              <span>我同意按《服务与隐私说明》用于联系与评估（仅用于咨询，不做其他用途）。</span>
+            </label>
+            <button class="btn btn-primary" type="submit">提交评估</button>
+          </div>
+        </form>
+        <p class="note" style="margin-top:8px">也可直接微信添加：<b>185 6924 4960</b>（同号）。</p>
+      </div>
+      <div class="card">
+        <h3>微信扫码</h3>
+        <img alt="微信二维码占位图" class="avatar" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=900&auto=format&fit=crop" />
+        <p class="note">将二维码替换为你的个人/企业微信二维码图片。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px">
+      <div>© <span id="y"></span> 前途助攻｜一站式留学申请</div>
+      <div style="display:flex;gap:14px">
+        <a href="#">服务与隐私说明</a>
+        <a href="#">用户协议</a>
+        <a href="#">活动细则</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const m = document.getElementById('mnav');
+    m && m.addEventListener('click', () => {
+      const links = document.querySelector('.nav-links');
+      if(!links) return;
+      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+      links.style.flexDirection = 'column';
+      links.style.gap = '16px';
+      links.style.background = '#fff';
+      links.style.position = 'absolute';
+      links.style.top = '64px';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.padding = '12px 20px';
+      links.style.borderBottom = '1px solid #eef2f7';
+    });
+  </script>
+</body>
+</html>
